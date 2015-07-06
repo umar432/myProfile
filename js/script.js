@@ -18,6 +18,13 @@ $(function()
 		
     });
 	
+	$('#home').waitForImages({
+    waitForAll: true,
+    finished: function() {
+        // Loaded all images referenced in CSS.
+		$(".homedisplay").css('display', 'block');
+    }
+});
 
 });
 
